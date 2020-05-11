@@ -8,7 +8,5 @@ pipeline {
         sh 'serve -s build'
             }
         }
-  environment {
-    CI = 'true'
-  }
+    }
 }
