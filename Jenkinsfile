@@ -7,7 +7,8 @@ pipeline {
         sh 'npm start'
         sh 'serve -s build'
         archiveArtifacts 'src/app.js'
-            }
-        }
+      }
     }
+
+  }
 }
