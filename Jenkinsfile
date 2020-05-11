@@ -10,7 +10,7 @@ pipeline {
     }
     stage('Archive artifact') {
             steps {
-                archiveArtifacts 'src/app.js 
+                archiveArtifacts 'src/app.js'
             onlyIfSuccessful: 'true'
             }
         }
