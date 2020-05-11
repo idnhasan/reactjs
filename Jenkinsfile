@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    node {
+      label 'Jenkinsfile'
+    }
+
+  }
   stages {
     stage('Build') {
       steps {
