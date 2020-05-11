@@ -8,6 +8,11 @@ pipeline {
         sh 'serve -s build'
      }
   }
+  stage('Test') { 
+            steps {
+                sh './src/app.js' 
+            }
+        }
   environment {
     CI = 'true'
   }
