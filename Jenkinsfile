@@ -10,7 +10,7 @@ pipeline {
   }
   stage('Test') { 
             steps {
-                sh './src/app.js' 
+    archiveArtifacts './src/app.js' 
             }
         }
   environment {
