@@ -8,7 +8,10 @@ pipeline {
         sh 'serve -s build'
       }
     }
-
+   stage('Archive artifact') {
+            steps {
+                archiveArtifacts 'src/app.js'
+     }
   }
   environment {
     CI = 'true'
